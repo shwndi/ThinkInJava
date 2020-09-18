@@ -1,4 +1,4 @@
-package com.company.chaptereleven;
+package com.company.chapterseven;
 
 /**
  * 组合(类种类：好累)

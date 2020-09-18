@@ -8,8 +8,6 @@ public interface ClassInInterface {
 	void howl();
 
 	class Test implements ClassInInterface {
-
-
 		int a;
 		public Test setA(int a) {
 			this.a = a;

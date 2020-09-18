@@ -1,4 +1,4 @@
-package com.company.chaptereleven;
+package com.company.chapterseven;
 
 /**
  * final成员初始化一定要赋值
