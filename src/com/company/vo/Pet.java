@@ -11,10 +11,23 @@ import java.util.*;
  * @date 2020-9-18
  */
 public class Pet {
+	public String id;
 
 	private final static List<Pet> pets = new ArrayList<>();
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Pet pet = (Pet) o;
+		return Objects.equals(this.toString(), pet.toString());
+	}
 
-	{
+	@Override
+	public int hashCode() {
+		return Objects.hash(this.toString());
+	}
+
+	static {
 		pets.add(new Cymric());
 		pets.add(new EgyptianMau());
 		pets.add(new Hamster());
@@ -23,6 +36,11 @@ public class Pet {
 		pets.add(new Mutt());
 		pets.add(new Pug());
 		pets.add(new Rat());
+	}
+	public static Pet randomPet(){
+		Random random = new Random();
+		int a = random.nextInt(7);
+		return pets.get(a);
 	}
 
 	public static List<Pet> arrayList(int i) {
@@ -34,6 +52,19 @@ public class Pet {
 			petList.add(pet);
 		}
 		return petList;
+	}
+	public static void main(String[] args){
+		List<Pet> petList = Pet.arrayList(3);
+		System.out.println(petList);
+	}
+
+	@Override
+	public String toString() {
+		return "Pet";
+	}
+
+	public String id() {
+		return id;
 	}
 
 	/*public static void main(String[] args) {

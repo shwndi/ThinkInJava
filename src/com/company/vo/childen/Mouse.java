@@ -9,4 +9,8 @@ import com.company.vo.Pet;
  * @date 2020-9-18
  */
 public class Mouse extends Pet {
+	@Override
+	public String toString() {
+		return "Mouse";
+	}
 }
