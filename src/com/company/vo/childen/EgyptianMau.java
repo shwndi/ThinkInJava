@@ -11,6 +11,6 @@ import com.company.vo.Pet;
 public class EgyptianMau extends Pet {
 	@Override
 	public String toString() {
-		return "EgyptianMau	";
+		return "EgyptianMau";
 	}
 }

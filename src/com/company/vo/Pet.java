@@ -11,6 +11,14 @@ import java.util.*;
  * @date 2020-9-18
  */
 public class Pet {
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
 	public String id;
 
 	private final static List<Pet> pets = new ArrayList<>();
@@ -49,6 +57,7 @@ public class Pet {
 		for (int j = 0; j < i; j++) {
 			int a = random.nextInt(7);
 			Pet pet = pets.get(a);
+			pet.setId(String.valueOf(j));
 			petList.add(pet);
 		}
 		return petList;
