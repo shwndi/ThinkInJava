@@ -8,7 +8,7 @@ package com.company.chapterfive;
  */
 public class House {
 	Window w1 = new Window("w1");
-	House(){
+	public House(){
 		System.out.println("House()");
 		w3 = new Window();
 		System.out.println(w3);

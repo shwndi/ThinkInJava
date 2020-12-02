@@ -2,7 +2,7 @@
 // TIJ4 Chapter Typeinfo, Exercise 15, page 586
 /* Implement a new PetCreator using Registered Factories, and modify the Pets
 * Facade so that it uses this one instead of the other two. Ensure that the 
-* rest of the examples that use Pets.java still work correctly.
+* rest of the examples that use Pet.java still work correctly.
 */
 import java.util.*;
 import typeinfo.pets.*;
@@ -89,7 +89,7 @@ public class RegisteredPetFactories15 {
 *	}
 * }
 *
-* // typeinfo/pets/Pets.java
+* // typeinfo/pets/Pet.java
 * // Facade to produce a default PetCreator.
 * package typeinfo.pets;
 * import java.util.*;
