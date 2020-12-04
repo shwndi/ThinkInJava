@@ -26,7 +26,7 @@ public abstract class PetCreator {
 			throw new RuntimeException(e);
 		}
 	}
-	public Pet[] creatArray(int size){
+	public Pet[] createArrays(int size){
 		Pet[] result = new Pet[size];
 		for (int i = 0; i < size; i++) {
 			result[i] = randomPet();
@@ -35,7 +35,7 @@ public abstract class PetCreator {
 	}
 	public ArrayList<Pet> arraylist(int size){
 		ArrayList<Pet> result = new ArrayList<>();
-		Collections.addAll(result, creatArray(size));
+		Collections.addAll(result, createArrays(size));
 		return result;
 	}
 }
