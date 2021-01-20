@@ -29,9 +29,13 @@ public class DynamicProxyHandler implements InvocationHandler {
 }
 
 class SimpleDynamicProxy {
+	private static  Integer i = 0;
+	private static Integer rod = 0;
+	private static Integer ros = 0;
 	public static void consumer(Interface iface) {
-		iface.doSomething();
-		iface.somethingElse("bonobo");
+		i++;
+		rod = iface.doSomething(rod);
+		ros = iface.somethingElse("bonobo",ros);
 	}
 
 	public static void main(String[] args) {
