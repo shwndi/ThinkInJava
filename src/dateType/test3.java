@@ -18,6 +18,9 @@ public class test3 {
 					"a='" + a + '\'' +
 					'}';
 		}
+
+
+
 	}
 		A a = new A();
 		a.a="123";
