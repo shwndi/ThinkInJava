@@ -8,5 +8,10 @@ package com.company.chapterfifteen.drinks;
  * @date 2021-1-4
  */
 public interface Generator<T> {
-
+    /**
+     * next()
+     * @return
+     */
+    T next();
 }
+///:~

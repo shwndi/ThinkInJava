@@ -22,7 +22,8 @@ public class CoffeeGenerator implements Generator<Coffee>,Iterable<Coffee>{
 	public  CoffeeGenerator(int sz){
 		size = sz;
 	}
-	public Coffee next(){
+	@Override
+    public Coffee next(){
 		try{
 			return (Coffee)types[rand.nextInt(types.length)].newInstance();
 		}catch (Exception e){
@@ -54,12 +55,20 @@ public class CoffeeGenerator implements Generator<Coffee>,Iterable<Coffee>{
 
 	public static void main(String[] args) {
 		CoffeeGenerator gen = new CoffeeGenerator();
+		/**
+		 * 没有创建coffee类
+		 */
 		CoffeeGenerator coffees = new CoffeeGenerator(5);
+
 		for (int i = 0; i < 5; i++) {
 			System.out.println(gen.next());
 		}
 		for (Coffee coffee : new CoffeeGenerator(5)) {
 			System.out.println(coffee);
+		}
+
+		for (Iterator<Coffee> iter = coffees.iterator(); iter.hasNext(); ) {
+			Coffee coffee = iter.next();
 		}
 	}
 }

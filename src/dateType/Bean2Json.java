@@ -6,7 +6,7 @@ import cn.hutool.json.JSONUtil;
  * @author czy
  * @date 2021-1-20
  */
-public class test3 {
+public class Bean2Json {
 
 	public static void main(String[] args) {
 	class A{

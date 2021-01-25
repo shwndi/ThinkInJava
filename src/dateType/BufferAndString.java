@@ -9,7 +9,7 @@ import java.util.List;
  * @author czy
  * @date 2020-12-17
  */
-public class test1 {
+public class BufferAndString {
 	public static void main(String[] args) {
 		String s1 = "hellow";
 		String s2 = "world";
