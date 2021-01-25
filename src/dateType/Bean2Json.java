@@ -18,6 +18,9 @@ public class Bean2Json {
 					"a='" + a + '\'' +
 					'}';
 		}
+
+
+
 	}
 		A a = new A();
 		a.a="123";
