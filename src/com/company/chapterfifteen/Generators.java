@@ -13,7 +13,7 @@ import java.util.Collection;
  * @date 2021/1/21
  */
 public class Generators {
-    public static <T>Collection<T> fill(Collection<T>coll, Generator<T> gen, int n){
+    public static <T>Collection<T> fill(Collection<T> coll, Generator<T> gen, int n){
         for (int i = 0; i < n; i++) {
             coll.add(gen.next());
         }
