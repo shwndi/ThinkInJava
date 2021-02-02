@@ -20,17 +20,17 @@ class IntegerFactory implements FactoryI<Integer>{
     }
 
 }
-class Widget{
-    public static class Factory implements FactoryI<Widget>{
+class Widget0 {
+    public static class Factory implements FactoryI<Widget0>{
         @Override
-        public Widget create(){
-            return new Widget();
+        public Widget0 create(){
+            return new Widget0();
         }
     }
 }
 public class FactoryConstraint {
     public static void main(String[] args) {
         new Foo2<Integer>(new IntegerFactory());
-        new Foo2<Widget>(new Widget.Factory());
+        new Foo2<Widget0>(new Widget0.Factory());
     }
 }
