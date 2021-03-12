@@ -7,44 +7,76 @@
  * Integer.toBinaryString().
  ************************************************/
 package operators;
+
 import static net.mindview.util.Print.*;
 
 public class E12_UnsignedRightShift {
-  public static void main(String[] args) {
-    int i = -1 << 1;
-    print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-    i >>>= 1;  print(Integer.toBinaryString(i));
-  }
+    public static void main(String[] args) {
+        int i = -1 << 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+        i >>>= 1;
+        print(Integer.toBinaryString(i));
+    }
 } /* Output:
 11111111111111111111111111111110
 1111111111111111111111111111111

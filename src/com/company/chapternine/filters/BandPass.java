@@ -7,13 +7,14 @@ package com.company.chapternine.filters;
  * @date 2020-7-25
  */
 public class BandPass extends Filter {
-	double lowCutOff, highCutOff;
-	BandPass(double lowCutOff, double highCutOff){
-		this.lowCutOff = lowCutOff;
-		this.highCutOff = highCutOff;
-	}
+    double lowCutOff, highCutOff;
 
-	Waveform process(Waveform input){
-		return  input;
-	}
+    BandPass(double lowCutOff, double highCutOff) {
+        this.lowCutOff = lowCutOff;
+        this.highCutOff = highCutOff;
+    }
+
+    Waveform process(Waveform input) {
+        return input;
+    }
 }

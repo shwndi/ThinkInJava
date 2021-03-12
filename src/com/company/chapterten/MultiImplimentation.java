@@ -13,22 +13,22 @@ abstract class E {
 }
 
 class Z extends D {
-	E makeE() {
-		return new E() {
-		};
-	}
+    E makeE() {
+        return new E() {
+        };
+    }
 }
 
 public class MultiImplimentation {
-	static void taskedD(D d) {
-	}
+    static void taskedD(D d) {
+    }
 
-	static void taskedE(E e) {
-	}
+    static void taskedE(E e) {
+    }
 
-	public static void main(String[] args) {
-		Z z = new Z();
-		taskedD(z);
-		taskedE(z.makeE());
-	}
+    public static void main(String[] args) {
+        Z z = new Z();
+        taskedD(z);
+        taskedE(z.makeE());
+    }
 }

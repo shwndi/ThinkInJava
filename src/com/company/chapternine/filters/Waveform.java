@@ -7,10 +7,10 @@ package com.company.chapternine.filters;
  * @date 2020-7-25
  */
 public class Waveform {
-	private static long count = 0;
-	private final long id = count++;
+    private static long count = 0;
+    private final long id = count++;
 
-	public String toString() {
-		return "Waveform" + id;
-	}
+    public String toString() {
+        return "Waveform" + id;
+    }
 }

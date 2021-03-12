@@ -7,14 +7,14 @@
 package initialization;
 
 enum PaperCurrencyTypes {
-  ONE, TWO, FIVE, TEN, TWENTY, FIFTY
+    ONE, TWO, FIVE, TEN, TWENTY, FIFTY
 }
 
 public class E21_PaperCurrencyTypesEnum {
-  public static void main(String args[]) {
-    for(PaperCurrencyTypes s : PaperCurrencyTypes.values())
-      System.out.println(s + ", ordinal " + s.ordinal());
-  }
+    public static void main(String args[]) {
+        for (PaperCurrencyTypes s : PaperCurrencyTypes.values())
+            System.out.println(s + ", ordinal " + s.ordinal());
+    }
 } /* Output:
 ONE, ordinal 0
 TWO, ordinal 1

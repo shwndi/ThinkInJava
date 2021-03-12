@@ -7,6 +7,6 @@ package com.company.chapterseven;
  * @date 2020-7-16
  */
 public class Monkey {
-	private String name;
-	private Animal animal;
+    private String name;
+    private Animal animal;
 }

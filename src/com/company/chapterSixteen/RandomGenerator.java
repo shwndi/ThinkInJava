@@ -71,11 +71,15 @@ public class RandomGenerator {
     }
 
     public static class Long implements Generator<java.lang.Long> {
-        private int mod =10000;
-        public Long(){}
-        public Long(int modelo){
+        private int mod = 10000;
+
+        public Long() {
+        }
+
+        public Long(int modelo) {
             mod = modelo;
         }
+
         @Override
         public java.lang.Long next() {
             return new java.lang.Long(r.nextInt(mod));
@@ -85,8 +89,8 @@ public class RandomGenerator {
     public static class Float implements Generator<java.lang.Float> {
         @Override
         public java.lang.Float next() {
-           int trimmed = Math.round(r.nextFloat())*100;
-            return ((float)trimmed)/100;
+            int trimmed = Math.round(r.nextFloat()) * 100;
+            return ((float) trimmed) / 100;
         }
     }
 
@@ -94,7 +98,7 @@ public class RandomGenerator {
         @Override
         public java.lang.Double next() {
             long round = Math.round(r.nextDouble() * 100);
-            return ((double)round)/100;
+            return ((double) round) / 100;
         }
     }
 }

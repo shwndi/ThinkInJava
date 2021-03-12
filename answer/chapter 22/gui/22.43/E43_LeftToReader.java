@@ -7,7 +7,7 @@
 package gui;
 
 public class E43_LeftToReader {
-  public static void main(String args[]) {
-    System.out.println("Left to the reader");
-  }
+    public static void main(String args[]) {
+        System.out.println("Left to the reader");
+    }
 } ///:~

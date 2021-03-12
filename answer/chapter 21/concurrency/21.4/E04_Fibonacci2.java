@@ -4,26 +4,27 @@
  * executors shown in this section.
  ***********************************************/
 package concurrency;
+
 import java.util.concurrent.*;
 
 public class E04_Fibonacci2 {
-  public static void main(String[] args) {
-    ExecutorService exec = Executors.newCachedThreadPool();
-    for(int i = 1; i <= 5; i++)
-      exec.execute(new Fibonacci(i));
-    Thread.yield();
-    exec.shutdown();
-    exec = Executors.newFixedThreadPool(5);
-    for(int i = 1; i <= 5; i++)
-      exec.execute(new Fibonacci(i));
-    Thread.yield();
-    exec.shutdown();
-    exec = Executors.newSingleThreadExecutor();
-    for(int i = 1; i <= 5; i++)
-      exec.execute(new Fibonacci(i));
-    Thread.yield();
-    exec.shutdown();
-  }
+    public static void main(String[] args) {
+        ExecutorService exec = Executors.newCachedThreadPool();
+        for (int i = 1; i <= 5; i++)
+            exec.execute(new Fibonacci(i));
+        Thread.yield();
+        exec.shutdown();
+        exec = Executors.newFixedThreadPool(5);
+        for (int i = 1; i <= 5; i++)
+            exec.execute(new Fibonacci(i));
+        Thread.yield();
+        exec.shutdown();
+        exec = Executors.newSingleThreadExecutor();
+        for (int i = 1; i <= 5; i++)
+            exec.execute(new Fibonacci(i));
+        Thread.yield();
+        exec.shutdown();
+    }
 } /* Output: (Sample)
 Seq. of 1: [1]
 Seq. of 2: [1, 1]

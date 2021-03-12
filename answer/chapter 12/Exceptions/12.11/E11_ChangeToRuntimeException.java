@@ -7,22 +7,25 @@
  ***********************************************/
 package exceptions;
 
-class AnException2 extends Exception {}
+class AnException2 extends Exception {
+}
 
 public class E11_ChangeToRuntimeException {
-  public void g() throws AnException2 {
-    throw new AnException2();
-  }
-  public void f() {
-    try {
-      g();
-    } catch(AnException2 e) {
-      throw new RuntimeException(e);
+    public void g() throws AnException2 {
+        throw new AnException2();
     }
-  }
-  public static void main(String args[]) {
-    E11_ChangeToRuntimeException ce =
-      new E11_ChangeToRuntimeException();
-    ce.f();
-  }
+
+    public void f() {
+        try {
+            g();
+        } catch (AnException2 e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void main(String args[]) {
+        E11_ChangeToRuntimeException ce =
+                new E11_ChangeToRuntimeException();
+        ce.f();
+    }
 } ///:~

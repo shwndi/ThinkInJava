@@ -8,44 +8,76 @@
  * Display each result using Integer.toBinaryString().
  ************************************************/
 package operators;
+
 import static net.mindview.util.Print.*;
 
 public class E11_SignedRightShift {
-  public static void main(String[] args) {
-    int i = 0x80000000;
-    print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-    i >>= 1;  print(Integer.toBinaryString(i));
-  }
+    public static void main(String[] args) {
+        int i = 0x80000000;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+        i >>= 1;
+        print(Integer.toBinaryString(i));
+    }
 } /* Output:
 10000000000000000000000000000000
 11000000000000000000000000000000

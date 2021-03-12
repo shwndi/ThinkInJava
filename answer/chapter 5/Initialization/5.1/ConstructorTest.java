@@ -3,12 +3,12 @@
 // Create a class containing an unitialized String reference. Demonstrate that // this reference is initialized by Java to null.
 
 class Tester {
-	String s;
+    String s;
 }
 
 public class ConstructorTest {
-	public static void main(String[] args) {
-		Tester t = new Tester();
-		System.out.println(t.s);
-	}
+    public static void main(String[] args) {
+        Tester t = new Tester();
+        System.out.println(t.s);
+    }
 }

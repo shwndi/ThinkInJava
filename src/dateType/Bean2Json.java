@@ -8,24 +8,23 @@ import cn.hutool.json.JSONUtil;
  */
 public class Bean2Json {
 
-	public static void main(String[] args) {
-	class A{
-		String a;
+    public static void main(String[] args) {
+        class A {
+            String a;
 
-		@Override
-		public String toString() {
-			return "A{" +
-					"a='" + a + '\'' +
-					'}';
-		}
+            @Override
+            public String toString() {
+                return "A{" +
+                        "a='" + a + '\'' +
+                        '}';
+            }
 
 
-
-	}
-		A a = new A();
-		a.a="123";
-		System.out.println(a);
-		String s = JSONUtil.toJsonStr(a.toString());
-		System.out.println(s);
-	}
+        }
+        A a = new A();
+        a.a = "123";
+        System.out.println(a);
+        String s = JSONUtil.toJsonStr(a.toString());
+        System.out.println(s);
+    }
 }

@@ -5,7 +5,7 @@ package com.company.chapterfifteen;
  * @date 2021/1/21
  */
 public class GenericMethods {
-    private <T> void  f(T t){
+    private <T> void f(T t) {
         System.out.println(t.getClass());
         System.out.println(t.getClass().getName());
         System.out.println(t.getClass().getCanonicalName());

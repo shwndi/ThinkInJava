@@ -2,10 +2,10 @@ package com.company.chapternine;
 
 /**
  * 接口嵌套：（意义：出于对严格的语法一致性考虑）
- * 	1、接口作用域只有两种：1、public；2、包访问路径。
- * 	2、接口不能定义私有 元素默认为public
- *	3、private接口实现的类不能向上转型
- *	4、private接口不能再定义他的类之外实现
+ * 1、接口作用域只有两种：1、public；2、包访问路径。
+ * 2、接口不能定义私有 元素默认为public
+ * 3、private接口实现的类不能向上转型
+ * 4、private接口不能再定义他的类之外实现
  *
  * @author czy
  * @date 2020-7-28

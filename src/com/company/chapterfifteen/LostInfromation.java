@@ -6,10 +6,18 @@ import java.util.*;
  * @author czy
  * @date 2021/1/26
  */
-class Frob<U>{}
-class Fnorkle{}
-class Quark<Q>{}
-class Particle<POSITION,MOMENTUM>{}
+class Frob<U> {
+}
+
+class Fnorkle {
+}
+
+class Quark<Q> {
+}
+
+class Particle<POSITION, MOMENTUM> {
+}
+
 public class LostInfromation {
     public static void main(String[] args) {
         List<Frob> list = new ArrayList<>();

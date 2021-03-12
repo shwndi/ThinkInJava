@@ -14,9 +14,9 @@ class CartoonWithDefCtor extends Drawing {
 }
 
 public class E03_CartoonWithDefCtor {
-  public static void main(String args[]) {
-    new CartoonWithDefCtor ();
-  }
+    public static void main(String args[]) {
+        new CartoonWithDefCtor();
+    }
 } /* Output:
 Art constructor
 Drawing constructor

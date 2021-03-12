@@ -8,21 +8,24 @@
  * list differently each time.
  ************************************************/
 package containers;
+
 import java.util.*;
+
 import static net.mindview.util.Print.*;
 import static net.mindview.util.Countries.*;
 
 public class E01_CountryList {
-  private static Random rnd = new Random(47);
-  public static void main(String[] args) {
-    List<String> l = new ArrayList<String>(names(8));
-    Collections.sort(l);
-    print("sorted: " + l);
-    for(int i = 1; i < 5; i++) {
-      Collections.shuffle(l, rnd);
-      print("shuffled (" + i + "): " + l);
+    private static Random rnd = new Random(47);
+
+    public static void main(String[] args) {
+        List<String> l = new ArrayList<String>(names(8));
+        Collections.sort(l);
+        print("sorted: " + l);
+        for (int i = 1; i < 5; i++) {
+            Collections.shuffle(l, rnd);
+            print("shuffled (" + i + "): " + l);
+        }
     }
-  }
 } /* Output:
 sorted: [ALGERIA, ANGOLA, BENIN, BOTSWANA, BURKINA FASO, BURUNDI, CAMEROON, CAPE VERDE]
 shuffled (1): [BURKINA FASO, BOTSWANA, CAMEROON, ALGERIA, CAPE VERDE, ANGOLA, BENIN, BURUNDI]

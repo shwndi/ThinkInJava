@@ -14,11 +14,11 @@ public class ArraysSearching {
         Generator<Integer> integer = new RandomGenerator.Integer(1000);
         //ConvertTo.primitive()
         //Arrays.binarySearch(String);
-        int[] a= new int[10];
+        int[] a = new int[10];
         ArrayList<int[]> o = new ArrayList<>();
         o.add(a);
         int[] ints = o.get(0);
-        int[] b = new int[]{1,2,3};
+        int[] b = new int[]{1, 2, 3};
         System.out.println(Arrays.toString(b));
     }
 }

@@ -8,11 +8,14 @@ import java.util.Objects;
  * @author czy
  * @date 2021/1/29
  */
-public class Holder <T>{
+public class Holder<T> {
     private T value;
-    public Holder(){}
-    public Holder(T value){
-        this.value=value;
+
+    public Holder() {
+    }
+
+    public Holder(T value) {
+        this.value = value;
     }
 
     public T getValue() {
@@ -25,7 +28,7 @@ public class Holder <T>{
 
     @Override
     public boolean equals(Object o) {
-      return value.equals(o);
+        return value.equals(o);
     }
 
     public static void main(String[] args) {
@@ -36,11 +39,11 @@ public class Holder <T>{
         apple.setValue(d);
         System.out.println(apple);
 //        Holder<Fruit> f=apple;
-        Holder<? extends  Fruit> f2=apple;
+        Holder<? extends Fruit> f2 = apple;
         System.out.println(f2);
         Fruit value = f2.getValue();
         System.out.println(value);
-        d=(Apple) f2.getValue();
+        d = (Apple) f2.getValue();
         System.out.println(d);
         try {
             Orange orange = (Orange) f2.getValue();

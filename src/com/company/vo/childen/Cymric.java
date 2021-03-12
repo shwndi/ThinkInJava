@@ -9,8 +9,8 @@ import com.company.vo.Pet;
  * @date 2020-9-18
  */
 public class Cymric extends Pet {
-	@Override
-	public String toString() {
-		return "Cymric";
-	}
+    @Override
+    public String toString() {
+        return "Cymric";
+    }
 }

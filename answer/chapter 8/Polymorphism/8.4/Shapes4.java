@@ -1,8 +1,8 @@
 // polymorphism/Shapes4.java
 // TIJ4 Chapter Polymorphism, Exercise 4, page 286
 /* Add a new shape to Shapes.java and verify in main() that polymorphism works
-* for your new type as is does for the old types.
-*/
+ * for your new type as is does for the old types.
+ */
 /* Solution includes, in package polymorphism.shape: 
 * import static net.mindview.util.Print.*;
 * public class Circle extends Shape {
@@ -55,16 +55,17 @@
 import polymorphism.shape.*;
 
 public class Shapes4 {
-	private static RandomShapeGenerator4 gen = new RandomShapeGenerator4();
-	public static void main(String[] args) {
-		Shape[] s = new Shape[10];
-		// fill up the array wth shapes:
-		for(int i = 0; i < s.length; i++)
-			s[i] = gen.next();
-		// make polymorphic method calls:
-		for(Shape shp : s) {
-			shp.draw();
-			shp.amend();
-		}	
-	}
+    private static RandomShapeGenerator4 gen = new RandomShapeGenerator4();
+
+    public static void main(String[] args) {
+        Shape[] s = new Shape[10];
+        // fill up the array wth shapes:
+        for (int i = 0; i < s.length; i++)
+            s[i] = gen.next();
+        // make polymorphic method calls:
+        for (Shape shp : s) {
+            shp.draw();
+            shp.amend();
+        }
+    }
 }

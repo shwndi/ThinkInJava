@@ -5,10 +5,10 @@ package com.company.chapterfourteen;
  * @date 2020-12-1
  */
 public class GenericClassRefreences {
-	public static void main(String[] args) {
-		Class intClass = int.class;
-		Class<Integer> integerClass = intClass;
-		integerClass = Integer.class;
-		intClass = double.class;
-	}
+    public static void main(String[] args) {
+        Class intClass = int.class;
+        Class<Integer> integerClass = intClass;
+        integerClass = Integer.class;
+        intClass = double.class;
+    }
 }

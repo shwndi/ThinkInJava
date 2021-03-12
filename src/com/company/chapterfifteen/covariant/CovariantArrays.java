@@ -7,13 +7,21 @@ import java.util.List;
 
 /**
  * Covariant 协变的
+ *
  * @author czy
  * @date 2021/1/28
  */
-class Fruit{}
-class Apple extends Fruit{}
-class Jonathan extends Apple{}
-class Orange extends Fruit{}
+class Fruit {
+}
+
+class Apple extends Fruit {
+}
+
+class Jonathan extends Apple {
+}
+
+class Orange extends Fruit {
+}
 
 public class CovariantArrays {
     public static void main(String[] args) {
@@ -48,9 +56,8 @@ public class CovariantArrays {
  * 与数组不同，泛型没有内建的协变类型，
  * 协变类型实数组在语言中定义的，因此可以内建了编译期和运行时的检查
  * 但是在使用泛型时，编译器和运行时系统不知道你想用类型做什么，采用什么规则。
- *
  */
-class NonCovariantGenerics{
+class NonCovariantGenerics {
 //    List<Fruit> flist =
 //            new ArrayList<Apple>();
 }

@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class Array {
     public static void main(String[] args) {
         Integer[] a = {1, 2, 3, 4};
-        Integer[] b ;
+        Integer[] b;
         b = a;
         System.out.println(Arrays.toString(b));
         a[1] = 9;
@@ -24,7 +24,7 @@ public class Array {
         d = c;
         System.out.println(Arrays.toString(c));
         System.out.println(Arrays.toString(d));
-        c[1]=8;
+        c[1] = 8;
         System.out.println(Arrays.toString(c));
         System.out.println(Arrays.toString(d));
     }

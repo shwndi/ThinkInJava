@@ -7,8 +7,8 @@ import java.util.Collections;
  * @date 2020-7-8
  */
 public class Data {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
 
-	}
+    }
 }

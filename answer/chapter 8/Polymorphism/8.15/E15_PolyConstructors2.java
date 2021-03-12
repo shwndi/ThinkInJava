@@ -5,28 +5,31 @@
  * section.
  ***********************************************/
 package polymorphism;
+
 import static net.mindview.util.Print.*;
 
 class RectangularGlyph extends Glyph {
-  private int width = 4;
-  private int height = 5;
-  RectangularGlyph(int width, int height) {
-    this.width = width;
-    this.height = height;
-    print("RectangularGlyph.RectangularGlyph(), width = " +
-      width + ", height = " + height);
-  }
-  void draw() {
-    print("RectangularGlyph.draw(), area = " + width *
-      height);
-  }
+    private int width = 4;
+    private int height = 5;
+
+    RectangularGlyph(int width, int height) {
+        this.width = width;
+        this.height = height;
+        print("RectangularGlyph.RectangularGlyph(), width = " +
+                width + ", height = " + height);
+    }
+
+    void draw() {
+        print("RectangularGlyph.draw(), area = " + width *
+                height);
+    }
 }
 
 public class E15_PolyConstructors2 {
-  public static void main(String[] args) {
-    new RoundGlyph(5);
-    new RectangularGlyph(2,2);
-  }
+    public static void main(String[] args) {
+        new RoundGlyph(5);
+        new RectangularGlyph(2, 2);
+    }
 } /* Output:
 Glyph() before draw()
 RoundGlyph.draw(), radius = 0

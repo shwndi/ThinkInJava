@@ -12,39 +12,43 @@
  * several different sizes of arrays.
  ***********************************************/
 package arrays;
+
 import java.util.Locale;
+
 import static net.mindview.util.Print.*;
 
 public class E03_TwoDDoubleArray {
-  public static double[][] twoDDoubleArray(
-    int xLen, int yLen, double valStart, double valEnd) {
-    double[][] array = new double[xLen][yLen];
-    double increment = (valEnd - valStart)/(xLen * yLen);
-    double val = valStart;
-    for(int i = 0; i < array.length; i++)
-      for(int j = 0; j < array[i].length; j++) {
-        array[i][j] = val;
-        val += increment;
-      }
-    return array;
-  }
-  public static void printArray(double[][] array) {
-    for(int i = 0; i < array.length; i++) {
-      for(int j = 0; j < array[i].length; j++)
-        System.out.printf(Locale.US, "%.2f ", array[i][j]);
-      print();
+    public static double[][] twoDDoubleArray(
+            int xLen, int yLen, double valStart, double valEnd) {
+        double[][] array = new double[xLen][yLen];
+        double increment = (valEnd - valStart) / (xLen * yLen);
+        double val = valStart;
+        for (int i = 0; i < array.length; i++)
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = val;
+                val += increment;
+            }
+        return array;
     }
-  }
-  public static void main(String args[]) {
-    double[][] twoD = twoDDoubleArray(4, 6, 47.0, 99.0);
-    printArray(twoD);
-    print("**********************");
-    double[][] twoD2 = twoDDoubleArray(2, 2, 47.0, 99.0);
-    printArray(twoD2);
-    print("**********************");
-    double[][] twoD3 = twoDDoubleArray(9, 5, 47.0, 99.0);
-    printArray(twoD3);
-  }
+
+    public static void printArray(double[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++)
+                System.out.printf(Locale.US, "%.2f ", array[i][j]);
+            print();
+        }
+    }
+
+    public static void main(String args[]) {
+        double[][] twoD = twoDDoubleArray(4, 6, 47.0, 99.0);
+        printArray(twoD);
+        print("**********************");
+        double[][] twoD2 = twoDDoubleArray(2, 2, 47.0, 99.0);
+        printArray(twoD2);
+        print("**********************");
+        double[][] twoD3 = twoDDoubleArray(9, 5, 47.0, 99.0);
+        printArray(twoD3);
+    }
 } /* Output:
 47.00 49.17 51.33 53.50 55.67 57.83
 60.00 62.17 64.33 66.50 68.67 70.83

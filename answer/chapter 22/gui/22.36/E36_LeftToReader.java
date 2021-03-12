@@ -11,7 +11,7 @@
 package gui;
 
 public class E36_LeftToReader {
-  public static void main(String args[]) {
-    System.out.println("Left to the reader");
-  }
+    public static void main(String args[]) {
+        System.out.println("Left to the reader");
+    }
 } ///:~

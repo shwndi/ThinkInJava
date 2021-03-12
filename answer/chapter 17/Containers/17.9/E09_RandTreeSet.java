@@ -5,17 +5,19 @@
  * to verify the sort order.
  ***********************************************/
 package containers;
+
 import java.util.*;
+
 import net.mindview.util.*;
 
 public class E09_RandTreeSet {
-  public static void main(String args[]) {
-    TreeSet<String> ts =
-      new TreeSet<String>(String.CASE_INSENSITIVE_ORDER);
-    ts.addAll(CollectionData.list(
-      new RandomGenerator.String(), 10));
-    System.out.println("ts = " + ts);
-  }
+    public static void main(String args[]) {
+        TreeSet<String> ts =
+                new TreeSet<String>(String.CASE_INSENSITIVE_ORDER);
+        ts.addAll(CollectionData.list(
+                new RandomGenerator.String(), 10));
+        System.out.println("ts = " + ts);
+    }
 } /* Output:
 ts = [ahKcxrE, GcFOWZn, GZMmJMR, naMesbt, oEsuEcU, OneOEdL, qUCBbkI, smwHLGE, TcQrGse, YNzbrny]
 *///:~

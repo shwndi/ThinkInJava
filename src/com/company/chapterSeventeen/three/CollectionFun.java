@@ -12,8 +12,8 @@ import java.util.List;
 public class CollectionFun {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
-        Collections.fill(list,"adaf");
-        List liat2= new ArrayList<>();
+        Collections.fill(list, "adaf");
+        List liat2 = new ArrayList<>();
         liat2.add("qweq");
         liat2.add(1);
         boolean b = list.addAll(liat2);

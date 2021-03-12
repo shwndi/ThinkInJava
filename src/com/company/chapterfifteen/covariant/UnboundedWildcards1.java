@@ -17,12 +17,14 @@ public class UnboundedWildcards1 {
         list2 = list;
         list3 = list;
     }
-    static void assign2(List<?> list){
+
+    static void assign2(List<?> list) {
         list1 = list;
         list2 = list;
         list3 = list;
     }
-    static void assign3(List<? extends Object> list){
+
+    static void assign3(List<? extends Object> list) {
         list1 = list;
         list2 = list;
         list3 = list;

@@ -5,7 +5,7 @@ package com.company.chapterfourteen.individual;
  * @date 2020-12-2
  */
 public class Person extends Individual {
-	public Person (String name){
-		super(name);
-	}
+    public Person(String name) {
+        super(name);
+    }
 }

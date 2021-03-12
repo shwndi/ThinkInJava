@@ -20,6 +20,6 @@ public class FillingArrays {
         float[] a7 = new float[size];
         double[] a8 = new double[size];
         String[] a9 = new String[size];
-        Arrays.fill(a1,true);
+        Arrays.fill(a1, true);
     }
 }

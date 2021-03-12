@@ -55,8 +55,8 @@ public class References {
         }
         LinkedList<WeakReference<VeryBig>> wa = new LinkedList<WeakReference<VeryBig>>();
         for (int i = 0; i < size; i++) {
-            wa.add(new WeakReference<VeryBig>(new VeryBig(" Weak " + i),rq));
-            System.out.println("Just created: "+wa.getLast());
+            wa.add(new WeakReference<VeryBig>(new VeryBig(" Weak " + i), rq));
+            System.out.println("Just created: " + wa.getLast());
             checkQueue();
         }
         SoftReference<VeryBig> s = new SoftReference<>(new VeryBig("Soft"));
@@ -64,8 +64,8 @@ public class References {
         System.gc();
         LinkedList<PhantomReference<VeryBig>> pa = new LinkedList<>();
         for (int i = 0; i < size; i++) {
-            pa.add(new PhantomReference<VeryBig>(new VeryBig("Phantom "+i),rq));
-            System.out.println("Just created: "+pa.getLast());
+            pa.add(new PhantomReference<VeryBig>(new VeryBig("Phantom " + i), rq));
+            System.out.println("Just created: " + pa.getLast());
             checkQueue();
         }
     }

@@ -13,7 +13,7 @@ import java.util.Collection;
  * @date 2021/1/21
  */
 public class Generators {
-    public static <T>Collection<T> fill(Collection<T> coll, Generator<T> gen, int n){
+    public static <T> Collection<T> fill(Collection<T> coll, Generator<T> gen, int n) {
         for (int i = 0; i < n; i++) {
             coll.add(gen.next());
         }
@@ -21,11 +21,11 @@ public class Generators {
     }
 
     public static void main(String[] args) {
-        Collection<Coffee> coffees = fill(new ArrayList<Coffee>(),new CoffeeGenerator(),4);
+        Collection<Coffee> coffees = fill(new ArrayList<Coffee>(), new CoffeeGenerator(), 4);
         for (Coffee coffee : coffees) {
             System.out.println(coffee);
         }
-        Collection<Integer> num = fill(new ArrayList<Integer>(),new Fibonacci(),12);
+        Collection<Integer> num = fill(new ArrayList<Integer>(), new Fibonacci(), 12);
         for (Integer integer : num) {
             System.out.println(integer);
         }

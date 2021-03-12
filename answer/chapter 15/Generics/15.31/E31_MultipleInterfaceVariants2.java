@@ -5,15 +5,19 @@
  * code so that the example compiles.
  ************************************************/
 package generics;
-interface Payable {}
 
-class Employee implements Payable {}
+interface Payable {
+}
 
-class Hourly extends Employee implements Payable {}
+class Employee implements Payable {
+}
+
+class Hourly extends Employee implements Payable {
+}
 
 public class E31_MultipleInterfaceVariants2 {
-  public static void main(String[] args) {
-    new Employee();
-    new Hourly();
-  }
+    public static void main(String[] args) {
+        new Employee();
+        new Hourly();
+    }
 } ///:~

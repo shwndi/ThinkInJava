@@ -5,6 +5,7 @@ package com.company.chapterfourteen.robot;
  * @date 2020-12-30
  */
 public interface Operation {
-	String description();
-	void command();
+    String description();
+
+    void command();
 }

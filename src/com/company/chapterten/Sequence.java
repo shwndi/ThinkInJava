@@ -5,65 +5,66 @@ package com.company.chapterten;
  * @date 2020-7-29
  */
 interface Selector {
-	boolean end();
+    boolean end();
 
-	Object current();
+    Object current();
 
-	void next();
+    void next();
 }
 
 public class Sequence {
-	public static void main(String[] args) {
-		Sequence sequence = new Sequence(10);
-		for (int i = 0; i < 10; i++) {
-			sequence.add(Integer.toString(i));
-		}
-		Selector selector = sequence.selector();
-		while (!selector.end()){
-			System.out.println(selector.current()+" ");
-			selector.next();
-		}
-		Sequence sequence1 = null;
-		System.out.println(sequence);
-		System.out.println(sequence1);
+    public static void main(String[] args) {
+        Sequence sequence = new Sequence(10);
+        for (int i = 0; i < 10; i++) {
+            sequence.add(Integer.toString(i));
+        }
+        Selector selector = sequence.selector();
+        while (!selector.end()) {
+            System.out.println(selector.current() + " ");
+            selector.next();
+        }
+        Sequence sequence1 = null;
+        System.out.println(sequence);
+        System.out.println(sequence1);
 
-	}
-	private Object[] items;
-	private int next = 0;
+    }
 
-	public Sequence(int size) {
-		items = new Object[size];
-	}
+    private Object[] items;
+    private int next = 0;
 
-	public void add(Object x) {
-		if (next < items.length) {
-			items[next++] = x;
-		}
-	}
+    public Sequence(int size) {
+        items = new Object[size];
+    }
 
-	public Selector selector(){
-		return new SequenceSelector();
-	}
+    public void add(Object x) {
+        if (next < items.length) {
+            items[next++] = x;
+        }
+    }
 
-	private class SequenceSelector implements Selector {
-		private int i = 1;
+    public Selector selector() {
+        return new SequenceSelector();
+    }
 
-		@Override
-		public boolean end() {
-			return i == items.length;
-		}
+    private class SequenceSelector implements Selector {
+        private int i = 1;
 
-		@Override
-		public Object current() {
-			return items[i];
-		}
+        @Override
+        public boolean end() {
+            return i == items.length;
+        }
 
-		@Override
-		public void next() {
-			if (i < items.length) {
-				i++;
-			}
-		}
-	}
+        @Override
+        public Object current() {
+            return items[i];
+        }
+
+        @Override
+        public void next() {
+            if (i < items.length) {
+                i++;
+            }
+        }
+    }
 
 }

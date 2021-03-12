@@ -9,8 +9,8 @@ import com.company.vo.Pet;
  * @date 2020-9-18
  */
 public class Manx extends Pet {
-	@Override
-	public String toString() {
-		return "Manx";
-	}
+    @Override
+    public String toString() {
+        return "Manx";
+    }
 }

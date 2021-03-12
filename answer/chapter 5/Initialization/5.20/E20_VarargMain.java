@@ -10,9 +10,9 @@
 package initialization;
 
 public class E20_VarargMain {
-  public static void main(String... args) {
-    E19_VarargStringArray.printStrings(args);
-  }
+    public static void main(String... args) {
+        E19_VarargStringArray.printStrings(args);
+    }
 } /* Output:
 These,
 are,

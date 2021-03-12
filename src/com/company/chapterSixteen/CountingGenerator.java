@@ -104,7 +104,7 @@ public class CountingGenerator {
         @Override
         public java.lang.Double next() {
             double result = value;
-            value +=1.0;
+            value += 1.0;
             return result;
         }
     }

@@ -7,12 +7,14 @@ import java.util.List;
  * @author czy
  * @date 2021/1/27
  */
-public class ListOfGenerics <T>{
+public class ListOfGenerics<T> {
     private List<T> array = new ArrayList<>();
-    public void add(T item){
+
+    public void add(T item) {
         array.add(item);
     }
-    public T get(int index){
+
+    public T get(int index) {
         return array.get(index);
     }
 }

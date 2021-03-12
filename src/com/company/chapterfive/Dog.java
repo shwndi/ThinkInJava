@@ -7,33 +7,33 @@ package com.company.chapterfive;
  * @date 2020-7-9
  */
 public class Dog {
-	private String name;
-	private String colour;
+    private String name;
+    private String colour;
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public Dog setName(String name) {
-		this.name = name;
-		return this;
-	}
+    public Dog setName(String name) {
+        this.name = name;
+        return this;
+    }
 
-	public String getColour() {
-		return colour;
-	}
+    public String getColour() {
+        return colour;
+    }
 
-	public Dog setColour(String colour) {
-		this.colour = colour;
-		return this;
-	}
+    public Dog setColour(String colour) {
+        this.colour = colour;
+        return this;
+    }
 
-	@Override
-	public String toString() {
-		return "Dog{" +
-				"name='" + name + '\'' +
-				", colour='" + colour + '\'' +
-				'}';
-	}
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", colour='" + colour + '\'' +
+                '}';
+    }
 
 }

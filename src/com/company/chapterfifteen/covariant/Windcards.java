@@ -32,21 +32,25 @@ public class Windcards {
         Object value = holder.getValue();
 
     }
-    static <T> T exact1(Holder<T> holder){
+
+    static <T> T exact1(Holder<T> holder) {
         T t = holder.getValue();
         return t;
     }
-    static <T> T exact2(Holder<T> holder , T arg){
+
+    static <T> T exact2(Holder<T> holder, T arg) {
         holder.setValue(arg);
-        T t =holder.getValue();
+        T t = holder.getValue();
         return t;
     }
-    static <T> T wildSubtype(Holder<? extends T> holder, T arg){
+
+    static <T> T wildSubtype(Holder<? extends T> holder, T arg) {
 //        holder.setValue(arg);
         T t = holder.getValue();
         return t;
     }
-    static <T> void wildSupertype(Holder<? super T> holder,T arg){
+
+    static <T> void wildSupertype(Holder<? super T> holder, T arg) {
         holder.setValue(arg);
 //        T t=holder.getValue();
         Object obj = holder.getValue();
@@ -61,15 +65,15 @@ public class Windcards {
         Holder<? extends Long> bounderd = new Holder<>();
 
         Long l = 1L;
-        rawArgs(raw,l);
-        rawArgs(qualified,l);
-        rawArgs(unbounded,l);
-        rawArgs(bounderd,l);
+        rawArgs(raw, l);
+        rawArgs(qualified, l);
+        rawArgs(unbounded, l);
+        rawArgs(bounderd, l);
 
-        unboundedArg(raw,l);
-        unboundedArg(qualified,l);
-        unboundedArg(unbounded,l);
-        unboundedArg(bounderd,l);
+        unboundedArg(raw, l);
+        unboundedArg(qualified, l);
+        unboundedArg(unbounded, l);
+        unboundedArg(bounderd, l);
 
     }
- }
+}

@@ -11,70 +11,73 @@ import java.util.*;
  * @date 2020-9-18
  */
 public class Pet {
-	public String getId() {
-		return id;
-	}
+    public String getId() {
+        return id;
+    }
 
-	public void setId(String id) {
-		this.id = id;
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	public String id;
+    public String id;
 
-	private final static List<Pet> pets = new ArrayList<>();
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (o == null || getClass() != o.getClass()) return false;
-		Pet pet = (Pet) o;
-		return Objects.equals(this.toString(), pet.toString());
-	}
+    private final static List<Pet> pets = new ArrayList<>();
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(this.toString());
-	}
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pet pet = (Pet) o;
+        return Objects.equals(this.toString(), pet.toString());
+    }
 
-	static {
-		pets.add(new Cymric());
-		pets.add(new EgyptianMau());
-		pets.add(new Hamster());
-		pets.add(new Manx());
-		pets.add(new Mouse());
-		pets.add(new Mutt());
-		pets.add(new Pug());
-		pets.add(new Rat());
-	}
-	public static Pet randomPet(){
-		Random random = new Random();
-		int a = random.nextInt(7);
-		return pets.get(a);
-	}
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.toString());
+    }
 
-	public static List<Pet> arrayList(int i) {
-		Random random = new Random();
-		List<Pet> petList = new ArrayList<>();
-		for (int j = 0; j < i; j++) {
-			int a = random.nextInt(7);
-			Pet pet = pets.get(a);
-			pet.setId(String.valueOf(j));
-			petList.add(pet);
-		}
-		return petList;
-	}
-	public static void main(String[] args){
-		List<Pet> petList = Pet.arrayList(3);
-		System.out.println(petList);
-	}
+    static {
+        pets.add(new Cymric());
+        pets.add(new EgyptianMau());
+        pets.add(new Hamster());
+        pets.add(new Manx());
+        pets.add(new Mouse());
+        pets.add(new Mutt());
+        pets.add(new Pug());
+        pets.add(new Rat());
+    }
 
-	@Override
-	public String toString() {
-		return "Pet";
-	}
+    public static Pet randomPet() {
+        Random random = new Random();
+        int a = random.nextInt(7);
+        return pets.get(a);
+    }
 
-	public String id() {
-		return id;
-	}
+    public static List<Pet> arrayList(int i) {
+        Random random = new Random();
+        List<Pet> petList = new ArrayList<>();
+        for (int j = 0; j < i; j++) {
+            int a = random.nextInt(7);
+            Pet pet = pets.get(a);
+            pet.setId(String.valueOf(j));
+            petList.add(pet);
+        }
+        return petList;
+    }
+
+    public static void main(String[] args) {
+        List<Pet> petList = Pet.arrayList(3);
+        System.out.println(petList);
+    }
+
+    @Override
+    public String toString() {
+        return "Pet";
+    }
+
+    public String id() {
+        return id;
+    }
 
 	/*public static void main(String[] args) {
 		//数组创建的三种方式
@@ -116,6 +119,6 @@ public class Pet {
 		iterator.remove();
 		System.out.println(arrayList);
 	//	System.out.println("next="+next+";   next1="+next1);*/
-	//}
+    //}
 }
 

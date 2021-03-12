@@ -5,7 +5,7 @@ package GZQ;
  * @date 2021/2/2
  */
 public class Speck {
-    public String speck(){
+    public String speck() {
         return "aaa";
     }
 }

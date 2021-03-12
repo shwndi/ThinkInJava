@@ -7,5 +7,5 @@ package com.company.chapterten;
  * @date 2020-7-30
  */
 public interface Destination {
-	String readLable();
+    String readLable();
 }

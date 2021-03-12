@@ -5,12 +5,13 @@
  * setDefaultCloseOperation().
  *********************************************************/
 package gui;
+
 import javax.swing.*;
 
 public class E01_HelloSwing2 {
-  public static void main(String[] args) {
-    JFrame frame = new JFrame("Hello Swing");
-    frame.setSize(300, 100);
-    frame.setVisible(true);
-  }
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Hello Swing");
+        frame.setSize(300, 100);
+        frame.setVisible(true);
+    }
 } ///:~

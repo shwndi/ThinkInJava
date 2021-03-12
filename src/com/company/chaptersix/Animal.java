@@ -5,11 +5,12 @@ package com.company.chaptersix;
  * @date 2020-7-14
  */
 public class Animal {
-	private Integer id;
-	String name;
-	public String eye;
-	String mouth;
-	protected void f(){
-		System.out.println("this is a animal !");
-	}
+    private Integer id;
+    String name;
+    public String eye;
+    String mouth;
+
+    protected void f() {
+        System.out.println("this is a animal !");
+    }
 }

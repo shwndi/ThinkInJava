@@ -13,7 +13,7 @@ public class Main {
         double e = Math.E;
         double result = pi / e;
         Date date = new Date();
-        System.out.println(pi+"\t"+e+"\t"+result);
+        System.out.println(pi + "\t" + e + "\t" + result);
     }
 }
 

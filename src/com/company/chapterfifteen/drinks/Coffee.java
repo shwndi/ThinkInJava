@@ -7,11 +7,11 @@ package com.company.chapterfifteen.drinks;
  * @date 2021-1-4
  */
 public class Coffee {
-	private static long counter = 0;
-	private final long id = counter++;
+    private static long counter = 0;
+    private final long id = counter++;
 
-	@Override
-	public String toString() {
-		return getClass().getSimpleName()+" "+id;
-	}
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " " + id;
+    }
 }

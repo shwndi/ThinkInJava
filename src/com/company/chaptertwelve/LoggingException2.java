@@ -9,19 +9,20 @@ import java.util.logging.Logger;
  * @date 2020-9-28
  */
 public class LoggingException2 {
-	private static Logger logger =
-			Logger.getLogger("LoggingException");
-	static void logException(Exception e){
-		StringWriter trace = new StringWriter();
-		e.printStackTrace(new PrintWriter(trace));
-		logger.severe(trace.toString());
-	}
+    private static Logger logger =
+            Logger.getLogger("LoggingException");
 
-	public static void main(String[] args) {
-		try{
-			throw new NullPointerException();
-		}catch (NullPointerException e){
-			logException(e);
-		}
-	}
+    static void logException(Exception e) {
+        StringWriter trace = new StringWriter();
+        e.printStackTrace(new PrintWriter(trace));
+        logger.severe(trace.toString());
+    }
+
+    public static void main(String[] args) {
+        try {
+            throw new NullPointerException();
+        } catch (NullPointerException e) {
+            logException(e);
+        }
+    }
 }

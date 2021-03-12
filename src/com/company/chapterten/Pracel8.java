@@ -8,18 +8,18 @@ package com.company.chapterten;
  * @date 2020-7-30
  */
 public class Pracel8 {
-	public Wrapping wrapping(int x){
-		return new Wrapping(x){
-			@Override
-			public int value(){
-				return super.value()*47;
-			}
-		};
-	}
+    public Wrapping wrapping(int x) {
+        return new Wrapping(x) {
+            @Override
+            public int value() {
+                return super.value() * 47;
+            }
+        };
+    }
 
-	public static void main(String[] args) {
-		Pracel8 pracel8 = new Pracel8();
-		pracel8.wrapping(33);
-	}
+    public static void main(String[] args) {
+        Pracel8 pracel8 = new Pracel8();
+        pracel8.wrapping(33);
+    }
 
 }

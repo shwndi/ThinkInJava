@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @author czy
  * @date 2021/1/26
  */
-public class TupleList<A,B,C,D> extends ArrayList<FourTuple<A,B,C,D>> {
+public class TupleList<A, B, C, D> extends ArrayList<FourTuple<A, B, C, D>> {
     public static void main(String[] args) {
         TupleList<Cat, Dog, String, Integer> f = new TupleList<>();
         f.add(TupleTest2.g2());

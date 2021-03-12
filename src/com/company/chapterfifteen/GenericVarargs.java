@@ -8,7 +8,7 @@ import java.util.List;
  * @date 2021/1/21
  */
 public class GenericVarargs {
-    public static <T> List<T> makeList(T... args){
+    public static <T> List<T> makeList(T... args) {
         List<T> result = new ArrayList<T>();
         for (T t : args) {
             result.add(t);

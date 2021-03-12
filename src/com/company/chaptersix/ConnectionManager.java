@@ -5,12 +5,16 @@ package com.company.chaptersix;
  * @date 2020-7-14
  */
 public class ConnectionManager {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-	}
+    }
 
 }
-class Manager{
-private Manager(){};
+
+class Manager {
+    private Manager() {
+    }
+
+    ;
 //public static Manager
 }

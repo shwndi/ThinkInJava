@@ -4,10 +4,11 @@
 // and print their values to verify that Java performs default initialization.
 
 public class PrimitiveTest {
-	static int i;
-	static char c;	
-	public static void main(String[] args) {		
-		System.out.println("int = " + i);
-		System.out.println("char = " + c);
-	}
+    static int i;
+    static char c;
+
+    public static void main(String[] args) {
+        System.out.println("int = " + i);
+        System.out.println("char = " + c);
+    }
 }

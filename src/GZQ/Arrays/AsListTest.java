@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * 反向遍历
+ *
  * @author czy
  * @date 2021/2/3
  */
@@ -17,17 +18,17 @@ public class AsListTest {
         System.out.println(it.toString());
         System.out.println("listIterator(): " + it);
         boolean b = it.hasNext();
-        System.out.println("hasNext(): "+b);
+        System.out.println("hasNext(): " + b);
         b = it.hasPrevious();
-        System.out.println("hasPrevious(): "+b);
+        System.out.println("hasPrevious(): " + b);
         String s1 = it.next();
-        System.out.println("next(): "+s1);
+        System.out.println("next(): " + s1);
         int i = it.nextIndex();
-        System.out.println("nextIndex(): "+i);
+        System.out.println("nextIndex(): " + i);
         String previous = it.previous();
-        System.out.println("previous(): "+ previous);
+        System.out.println("previous(): " + previous);
         int i1 = it.previousIndex();
-        System.out.println("previousIndex(): "+i1);
+        System.out.println("previousIndex(): " + i1);
 
     }
 }

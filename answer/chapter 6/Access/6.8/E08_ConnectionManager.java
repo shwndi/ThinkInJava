@@ -10,17 +10,18 @@
  * it runs out of objects. Test the classes in main().
  ***********************************************/
 package access;
+
 import access.connection.*;
 
 public class E08_ConnectionManager {
-  public static void main(String args[]) {
-    Connection c = ConnectionManager.getConnection();
-    while(c != null) {
-      System.out.println(c);
-      c.doSomething();
-      c = ConnectionManager.getConnection();
+    public static void main(String args[]) {
+        Connection c = ConnectionManager.getConnection();
+        while (c != null) {
+            System.out.println(c);
+            c.doSomething();
+            c = ConnectionManager.getConnection();
+        }
     }
-  }
 } /* Output:
 Connection 0
 Connection 1

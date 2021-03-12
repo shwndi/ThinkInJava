@@ -11,9 +11,9 @@ import java.util.List;
  */
 public class ArrayLsistIterat {
     public static void main(String[] args) {
-        List<String> s = (ArrayList)Arrays.asList("asdf sdf asdf fsd ef g re".split(" "));
+        List<String> s = (ArrayList) Arrays.asList("asdf sdf asdf fsd ef g re".split(" "));
         Iterator<String> iterator = s.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             String s1 = iterator.next();
             System.out.println(s1);
             iterator.remove();

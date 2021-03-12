@@ -4,7 +4,9 @@ package com.company.chapterfifteen;
  * @author czy
  * @date 2021/1/31
  */
-class Subtype extends BasicHolder<Subtype>{}
+class Subtype extends BasicHolder<Subtype> {
+}
+
 public class CRGWithBasicHolder {
     public static void main(String[] args) {
         Subtype st1 = new Subtype();

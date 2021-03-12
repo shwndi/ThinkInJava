@@ -8,19 +8,21 @@ import java.util.List;
  * @author czy
  * @date 2021/2/1
  */
-class BerylliumSphere{
+class BerylliumSphere {
     private static long counter;
     private final long id = counter++;
+
     @Override
-    public String toString(){
-        return "Sphere "+id;
+    public String toString() {
+        return "Sphere " + id;
     }
 }
+
 public class ContainerComparsion {
     public static void main(String[] args) {
         BerylliumSphere[] spheres = new BerylliumSphere[10];
         for (int i = 0; i < 5; i++) {
-            spheres[i]= new BerylliumSphere();
+            spheres[i] = new BerylliumSphere();
         }
         System.out.println(Arrays.toString(spheres));
         System.out.println(spheres[4]);

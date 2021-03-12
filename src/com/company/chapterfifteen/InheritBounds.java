@@ -6,38 +6,52 @@ import java.awt.*;
  * @author czy
  * @date 2021/1/28
  */
-class HoldItem<T>{
+class HoldItem<T> {
     T item;
-    HoldItem(T item){
-        this.item=item;
+
+    HoldItem(T item) {
+        this.item = item;
     }
-    T getItem(){
+
+    T getItem() {
         return item;
     }
 }
 
-class Coloted2<T extends HasColor> extends HoldItem<T>{
-    Coloted2(T item){
+class Coloted2<T extends HasColor> extends HoldItem<T> {
+    Coloted2(T item) {
         super(item);
     }
 
-    Color color(){
+    Color color() {
         return item.getColor();
     }
 }
-class ColoredDimension2<T extends Dimension& HasColor> extends Coloted2<T>{
-    ColoredDimension2(T item){
+
+class ColoredDimension2<T extends Dimension & HasColor> extends Coloted2<T> {
+    ColoredDimension2(T item) {
         super(item);
     }
-    int getX(){return item.x;}
-    int getY(){return item.y;}
-    int getZ(){return item.z;}
+
+    int getX() {
+        return item.x;
+    }
+
+    int getY() {
+        return item.y;
+    }
+
+    int getZ() {
+        return item.z;
+    }
 }
-class Solid2<T extends Dimension& HasColor &Weight> extends ColoredDimension2<T>{
-    Solid2(T item){
+
+class Solid2<T extends Dimension & HasColor & Weight> extends ColoredDimension2<T> {
+    Solid2(T item) {
         super(item);
     }
-    int weight(){
+
+    int weight() {
         return item.weight();
     }
 }

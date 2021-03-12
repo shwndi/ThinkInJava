@@ -10,12 +10,12 @@ import com.company.chapternine.InterfaceProcessor;
  */
 public class Filter {
 
-	String name() {
-		return getClass().getSimpleName();
-	}
+    String name() {
+        return getClass().getSimpleName();
+    }
 
 
-	Waveform process(Waveform input) {
-		return input;
-	}
+    Waveform process(Waveform input) {
+        return input;
+    }
 }

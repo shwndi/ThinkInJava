@@ -6,24 +6,39 @@ package com.company.chapterten;
  * @author czy
  * @date 2020-8-4
  */
-interface  A{}
-interface  B{}
-class X implements A,B{ }
-class Y implements A{
-	B makeB(){
-		return new B() {
-		};
-	}
+interface A {
 }
+
+interface B {
+}
+
+class X implements A, B {
+}
+
+class Y implements A {
+    B makeB() {
+        return new B() {
+        };
+    }
+}
+
 public class MultiInterface {
-	static void taskA(A a){};
-	static void taskB(B b){};
-	public static void main(String[] args) {
-		X x = new X();
-		Y y = new Y();
-		taskA(x);
-		taskB(x);
-		taskA(y);
-		taskB(y.makeB());
-	}
+    static void taskA(A a) {
+    }
+
+    ;
+
+    static void taskB(B b) {
+    }
+
+    ;
+
+    public static void main(String[] args) {
+        X x = new X();
+        Y y = new Y();
+        taskA(x);
+        taskB(x);
+        taskA(y);
+        taskB(y.makeB());
+    }
 }

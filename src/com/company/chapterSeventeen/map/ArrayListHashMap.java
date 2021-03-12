@@ -7,9 +7,10 @@ import java.util.List;
  * @author czy
  * @date 2021/2/20
  */
-public class ArrayListHashMap<K,V> {
+public class ArrayListHashMap<K, V> {
     ArrayList<Entry> mapList = new ArrayList<Entry>();
-   private class Entry<K,V>{
+
+    private class Entry<K, V> {
         private K k;
         private V v;
 
@@ -18,14 +19,16 @@ public class ArrayListHashMap<K,V> {
             this.v = v;
         }
     }
-    public void put(K k,V v){
+
+    public void put(K k, V v) {
         Entry<K, V> entry = new Entry<>(k, v);
         mapList.add(entry);
     }
-    public V get(K k){
+
+    public V get(K k) {
         for (Entry entry : mapList) {
-            if (entry.k ==k){
-                return (V)entry.v;
+            if (entry.k == k) {
+                return (V) entry.v;
             }
         }
         return null;
@@ -33,8 +36,8 @@ public class ArrayListHashMap<K,V> {
 
     public static void main(String[] args) {
         ArrayListHashMap map = new ArrayListHashMap<>();
-        map.put("a","a");
-        map.put(97,"a");
+        map.put("a", "a");
+        map.put(97, "a");
         System.out.println(map.get("a"));
     }
 }

@@ -5,6 +5,6 @@ package com.company.chaptersix.test;
  * @date 2020-7-14
  */
 public class Cat {
-	public String Colour;
-	String window;
+    public String Colour;
+    String window;
 }

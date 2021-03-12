@@ -7,19 +7,21 @@ package com.company.chapterten;
  * @date 2020-7-30
  */
 public class Pracel7b {
-	public Contents contents(){
-		return new MyContents();
-	}
-	class MyContents implements Contents{
-		@Override
-		public int value() {
-			return i;
-		}
-		private int i =11;
-	}
+    public Contents contents() {
+        return new MyContents();
+    }
 
-	public static void main(String[] args) {
-		Pracel7b pracel7 = new Pracel7b();
-		pracel7.contents();
-	}
+    class MyContents implements Contents {
+        @Override
+        public int value() {
+            return i;
+        }
+
+        private int i = 11;
+    }
+
+    public static void main(String[] args) {
+        Pracel7b pracel7 = new Pracel7b();
+        pracel7.contents();
+    }
 }

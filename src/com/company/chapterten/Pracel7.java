@@ -9,18 +9,19 @@ package com.company.chapterten;
  * @date 2020-7-30
  */
 public class Pracel7 {
-	public Contents contents(){
-		return new Contents() {
-			@Override
-			public int value() {
-				return i;
-			}
-		private int i =11;
-		};
-	}
+    public Contents contents() {
+        return new Contents() {
+            @Override
+            public int value() {
+                return i;
+            }
 
-	public static void main(String[] args) {
-		Pracel7 pracel7 = new Pracel7();
-		pracel7.contents();
-	}
+            private int i = 11;
+        };
+    }
+
+    public static void main(String[] args) {
+        Pracel7 pracel7 = new Pracel7();
+        pracel7.contents();
+    }
 }

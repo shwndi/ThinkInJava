@@ -7,20 +7,21 @@
  *    hadn't any"
  *********************************************************/
 package strings;
+
 import java.util.regex.*;
 
 public class E11_CheckForMatch2 {
-  public static void main(String[] args) {
-    Pattern p = Pattern.compile(
-      "(?i)((^[aeiou])|(\\s+[aeiou]))\\w+?[aeiou]\\b");
-    Matcher m = p.matcher("Arline ate eight apples and " +
-      "one orange while Anita hadn't any");
-    while(m.find()) {
-      System.out.println("Match \"" + m.group() +
-        "\" at positions " + m.start() + "-" +
-        (m.end() - 1));
+    public static void main(String[] args) {
+        Pattern p = Pattern.compile(
+                "(?i)((^[aeiou])|(\\s+[aeiou]))\\w+?[aeiou]\\b");
+        Matcher m = p.matcher("Arline ate eight apples and " +
+                "one orange while Anita hadn't any");
+        while (m.find()) {
+            System.out.println("Match \"" + m.group() +
+                    "\" at positions " + m.start() + "-" +
+                    (m.end() - 1));
+        }
     }
-  }
 } /* Output:
 Match "Arline" at positions 0-5
 Match " ate" at positions 6-9

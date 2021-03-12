@@ -12,17 +12,25 @@ import java.util.function.Consumer;
 public class IterableFibonacci extends Fibonacci implements Iterable<Integer> {
     private Fibonacci fib = new Fibonacci();
     private int n;
-    public IterableFibonacci(int count) { n = count; }
+
+    public IterableFibonacci(int count) {
+        n = count;
+    }
+
     @Override
     public Iterator<Integer> iterator() {
         return new Iterator<Integer>() {
             @Override
-            public boolean hasNext() { return n > 0; }
+            public boolean hasNext() {
+                return n > 0;
+            }
+
             @Override
             public Integer next() {
                 --n;
                 return fib.next();
             }
+
             @Override
             public void remove() { // Not implemented
                 throw new UnsupportedOperationException();
@@ -31,8 +39,9 @@ public class IterableFibonacci extends Fibonacci implements Iterable<Integer> {
     }
 
     public static void main(String[] args) {
-        IterableFibonacci iterableFibonacci = new IterableFibonacci(18);;
-        for(Integer i:iterableFibonacci){
+        IterableFibonacci iterableFibonacci = new IterableFibonacci(18);
+        ;
+        for (Integer i : iterableFibonacci) {
             System.out.println(i + " ");
         }
     }

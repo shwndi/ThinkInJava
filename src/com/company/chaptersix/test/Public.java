@@ -5,6 +5,6 @@ package com.company.chaptersix.test;
  * @date 2020-7-14
  */
 class People {
-	String name;
-	Integer age;
+    String name;
+    Integer age;
 }

@@ -5,5 +5,5 @@ package com.company.chapterfive;
  * @date 2020-7-13
  */
 public enum SimpleEnum {
-	FIRST,SECOND,THIRD,FOURTH,FIFTH,SIXTH,SEVENTH,EIGHTH,NINTH,TENTH
+    FIRST, SECOND, THIRD, FOURTH, FIFTH, SIXTH, SEVENTH, EIGHTH, NINTH, TENTH
 }

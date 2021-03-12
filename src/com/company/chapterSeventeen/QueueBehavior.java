@@ -77,16 +77,17 @@ class ToDoList extends PriorityQueue<ToDoList.ToDoItem> {
 
         @Override
         public String toString() {
-            return Character.toString(primary)+secondary+": "+item;
+            return Character.toString(primary) + secondary + ": " + item;
         }
     }
-    public void add(String td, char pri, int sec){
-        super.add(new ToDoItem(td, pri ,sec));
+
+    public void add(String td, char pri, int sec) {
+        super.add(new ToDoItem(td, pri, sec));
     }
 
     public static void main(String[] args) {
         ToDoList to = new ToDoList();
-        to.add("Empty trash",'A' ,4);
+        to.add("Empty trash", 'A', 4);
 
     }
 }

@@ -16,32 +16,34 @@ public class SlowMap<K, V> extends AbstractMap<K, V> {
         if (!keys.contains(key)) {
             keys.add(key);
             values.add(value);
-        }else {
+        } else {
             values.set(keys.indexOf(key), value);
         }
         return oldValue;
     }
+
     @Override
-    public V get(Object key){
-        if (!keys.contains(key)){
+    public V get(Object key) {
+        if (!keys.contains(key)) {
             return null;
         }
         return values.get(keys.indexOf(key));
     }
+
     @Override
-    public Set<Entry<K,V>> entrySet(){
+    public Set<Entry<K, V>> entrySet() {
         Set<Entry<K, V>> set = new HashSet<>();
         Iterator<K> ki = keys.iterator();
         Iterator<V> vi = values.iterator();
-        while (ki.hasNext()){
+        while (ki.hasNext()) {
 //            set.add(new MapEntry<K,V>(ki.next(),vi.next()));
         }
         return set;
     }
 
     public static void main(String[] args) {
-        String s= "174307";
-        int a= Integer.parseInt(s);
+        String s = "174307";
+        int a = Integer.parseInt(s);
         System.out.println(a);
     }
 

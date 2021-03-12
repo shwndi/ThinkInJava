@@ -7,8 +7,8 @@ import java.util.List;
  * @author czy
  * @date 2021/1/27
  */
-public class ListMaker <T>{
-    List<T> create(){
+public class ListMaker<T> {
+    List<T> create() {
         return new ArrayList<T>();
     }
 

@@ -7,12 +7,12 @@ package com.company.chapterfive;
  * @date 2020-7-11
  */
 public class Initialization {
-	int i = 1;
-	Cat cat ;
+    int i = 1;
+    Cat cat;
 
-	public static void main(String[] args) {
-		Initialization initialization = new Initialization();
-		String name = initialization.cat.name+"猫";
-		System.out.println(name);
-	}
+    public static void main(String[] args) {
+        Initialization initialization = new Initialization();
+        String name = initialization.cat.name + "猫";
+        System.out.println(name);
+    }
 }

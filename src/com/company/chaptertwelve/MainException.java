@@ -9,8 +9,8 @@ import java.io.IOException;
  * @date 2020-10-14
  */
 public class MainException {
-	public static void main(String[] args) throws IOException {
-		FileInputStream file = new FileInputStream("mainException.java");
-		file.close();
-	}
+    public static void main(String[] args) throws IOException {
+        FileInputStream file = new FileInputStream("mainException.java");
+        file.close();
+    }
 }

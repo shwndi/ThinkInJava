@@ -4,37 +4,39 @@
 // finally clause.
 
 class VeryImportantException extends Exception {
-	public String toString() {
-		return "A very important exception!";
-	}
+    public String toString() {
+        return "A very important exception!";
+    }
 }
 
 class HoHumException extends Exception {
-	public String toString() {
-		return "A trivial exception";
-	}
+    public String toString() {
+        return "A trivial exception";
+    }
 }
 
 public class LostMessageFound19 {
-	void f() throws VeryImportantException {
-		throw new VeryImportantException();
-	}
-	void dispose() throws HoHumException {
-		throw new HoHumException();
-	}
-	public static void main(String[] args) {
-		try {
-			LostMessageFound19 lmf = new LostMessageFound19();
-			try {
-				lmf.f();
-			} catch(Exception e) {
-				System.out.println(e);
-			} finally {
-				lmf.dispose();
-			}
+    void f() throws VeryImportantException {
+        throw new VeryImportantException();
+    }
 
-		} catch(Exception e) {
-			System.out.println(e);
-		}
-	}
+    void dispose() throws HoHumException {
+        throw new HoHumException();
+    }
+
+    public static void main(String[] args) {
+        try {
+            LostMessageFound19 lmf = new LostMessageFound19();
+            try {
+                lmf.f();
+            } catch (Exception e) {
+                System.out.println(e);
+            } finally {
+                lmf.dispose();
+            }
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
 }

@@ -6,22 +6,25 @@
  * explain the output.
  ***********************************************/
 package reusing;
+
 import static net.mindview.util.Print.*;
 
 class JapaneseBeetle extends Beetle {
-  int m = printInit("JapaneseBeetle.m initialized");
-  JapaneseBeetle() {
-    print("m = " + m);
-    print("j = " + j);
-  }
-  static int x3 =
-    printInit("static JapaneseBeetle.x3 initialized");
+    int m = printInit("JapaneseBeetle.m initialized");
+
+    JapaneseBeetle() {
+        print("m = " + m);
+        print("j = " + j);
+    }
+
+    static int x3 =
+            printInit("static JapaneseBeetle.x3 initialized");
 }
 
 public class E24_JapaneseBeetle {
-  public static void main(String args[]) {
-    new JapaneseBeetle();
-  }
+    public static void main(String args[]) {
+        new JapaneseBeetle();
+    }
 } /* Output:
 static Insect.x1 initialized
 static Beetle.x2 initialized

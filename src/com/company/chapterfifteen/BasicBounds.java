@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class BasicBounds {
 
-//    static class MyClass extends Dimension implements HasColor {
+    //    static class MyClass extends Dimension implements HasColor {
 //
 //        @Override
 //        public Color getColor() {

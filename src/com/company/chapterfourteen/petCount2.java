@@ -5,7 +5,7 @@ package com.company.chapterfourteen;
  * @date 2020-12-3
  */
 public class petCount2 {
-	public static void main(String[] args) {
-		PetCount.countPets(Pets.creator);
-	}
+    public static void main(String[] args) {
+        PetCount.countPets(Pets.creator);
+    }
 }

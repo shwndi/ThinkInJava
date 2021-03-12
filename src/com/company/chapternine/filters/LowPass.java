@@ -9,16 +9,18 @@ import java.io.File;
  * @date 2020-7-25
  */
 public class LowPass extends Filter {
-	double cutOff;
-	public LowPass(double cutOff){
-		this.cutOff = cutOff;
-	}
-	public Object process(Object input){
-		return  input;
-	}
+    double cutOff;
 
-	@Override
-	Waveform process(Waveform input){
-		return  input;
-	}
+    public LowPass(double cutOff) {
+        this.cutOff = cutOff;
+    }
+
+    public Object process(Object input) {
+        return input;
+    }
+
+    @Override
+    Waveform process(Waveform input) {
+        return input;
+    }
 }

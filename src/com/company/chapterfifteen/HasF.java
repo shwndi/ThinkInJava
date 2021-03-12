@@ -7,31 +7,37 @@ import com.company.chapterfive.Cat;
  * @date 2021/1/27
  */
 public class HasF {
-    public void f(){
+    public void f() {
         System.out.println("Hasf.f()");
     }
 }
-class Manipulator<T>{
+
+class Manipulator<T> {
     private T obj;
-    public Manipulator(T t){
-      this.obj=t;
+
+    public Manipulator(T t) {
+        this.obj = t;
     }
-    public void manipulate(){
-       // obj.f();
+
+    public void manipulate() {
+        // obj.f();
     }
 
 }
-class Manipulator2 <T extends HasF>{
+
+class Manipulator2<T extends HasF> {
     private T obj;
-    public Manipulator2(T t){
-        this.obj= t;
+
+    public Manipulator2(T t) {
+        this.obj = t;
     }
-    public void manipulate(){
+
+    public void manipulate() {
         obj.f();
     }
 }
 
-class Manipulation{
+class Manipulation {
     public static void main(String[] args) {
         HasF hf = new HasF();
         Manipulator<HasF> manipulator = new Manipulator<>(hf);
@@ -39,11 +45,13 @@ class Manipulation{
     }
 
 }
-class Foo<T>{
+
+class Foo<T> {
     T var;
 
     /**
      * new 丢失类型信息
+     *
      * @return
      */
     @Override
@@ -54,7 +62,7 @@ class Foo<T>{
     }
 }
 
-class Run{
+class Run {
     public static void main(String[] args) {
         Foo<Cat> foo = new Foo<Cat>();
         System.out.println(foo);

@@ -18,6 +18,6 @@ public class ErasedTypeEquivalene {
         System.out.println(c2.hashCode());
         System.out.println(ClassLayout.parseInstance(c1).toPrintable());
         System.out.println(ClassLayout.parseInstance(c2).toPrintable());
-        System.out.println(c1==c2);
+        System.out.println(c1 == c2);
     }
 }

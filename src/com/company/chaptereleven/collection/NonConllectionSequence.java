@@ -10,35 +10,38 @@ import java.util.List;
  * @date 2020-9-25
  */
 public class NonConllectionSequence extends PetSequence {
-	public Iterator<Pet> iterator(){
-		return new Iterator<Pet>() {
-			private int index =0 ;
-			@Override
-			public boolean hasNext() {
-				return index<pets.length;
-			}
+    public Iterator<Pet> iterator() {
+        return new Iterator<Pet>() {
+            private int index = 0;
 
-			@Override
-			public Pet next() {
-				return pets[index++];
-			}
-			@Override
-			public void remove(){
-				throw new UnsupportedOperationException();
-			}
-		};
-	}
+            @Override
+            public boolean hasNext() {
+                return index < pets.length;
+            }
 
-	public static void main(String[] args) {
-		NonConllectionSequence nc = new NonConllectionSequence();
-		InterfaceVsIterator.disPlay(nc.iterator());
-		String[] strings = "afda dfkajh afda afa".split(" ");
-		for (String string : strings) {
-			System.out.println(string);
-		}
-	}
+            @Override
+            public Pet next() {
+                return pets[index++];
+            }
+
+            @Override
+            public void remove() {
+                throw new UnsupportedOperationException();
+            }
+        };
+    }
+
+    public static void main(String[] args) {
+        NonConllectionSequence nc = new NonConllectionSequence();
+        InterfaceVsIterator.disPlay(nc.iterator());
+        String[] strings = "afda dfkajh afda afa".split(" ");
+        for (String string : strings) {
+            System.out.println(string);
+        }
+    }
 }
+
 class PetSequence {
-	private List<Pet> petList = Pet.arrayList(8);
-	Pet[] pets = petList.toArray(new Pet[0]);
+    private List<Pet> petList = Pet.arrayList(8);
+    Pet[] pets = petList.toArray(new Pet[0]);
 }

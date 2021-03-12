@@ -9,11 +9,13 @@
 package exceptions;
 
 class MyRuntimeException extends RuntimeException {
-  public MyRuntimeException(String s) { super(s); }
+    public MyRuntimeException(String s) {
+        super(s);
+    }
 }
 
 public class E28_RuntimeExceptionClass {
-  public static void main(String args[]) {
-    throw new MyRuntimeException("MyRuntimeException msg");
-  }
+    public static void main(String args[]) {
+        throw new MyRuntimeException("MyRuntimeException msg");
+    }
 } ///:~

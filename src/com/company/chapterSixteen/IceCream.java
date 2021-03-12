@@ -13,17 +13,18 @@ import java.util.Random;
 public class IceCream {
     private static Random rand = new Random(47);
     static final String[] FLAVORS = {
-            "Chocolate","Strawberry","Vanilla Fudge Swirl",
-            "Mint Chip","Mocha Almond Fudge", "Rum Raisin","Praline Cream","Mud Pie"
+            "Chocolate", "Strawberry", "Vanilla Fudge Swirl",
+            "Mint Chip", "Mocha Almond Fudge", "Rum Raisin", "Praline Cream", "Mud Pie"
     };
 
     /**
      * pick 防止重复，do{}while（true）停止循环
+     *
      * @param n
      * @return
      */
-    public static String[] flavorSet(int n){
-        if (n>FLAVORS.length){
+    public static String[] flavorSet(int n) {
+        if (n > FLAVORS.length) {
             throw new IllegalArgumentException("Set too big");
         }
         String[] results = new String[n];
@@ -31,8 +32,8 @@ public class IceCream {
         for (int i = 0; i < n; i++) {
             int t;
             do {
-                t=rand.nextInt(FLAVORS.length);
-            }while (picked[t]);
+                t = rand.nextInt(FLAVORS.length);
+            } while (picked[t]);
             results[i] = FLAVORS[t];
             picked[t] = true;
         }
@@ -41,7 +42,7 @@ public class IceCream {
     }
 
     public static void main(String[] args) {
-        int[][] a={{1,2,3},{4,5,6}};
+        int[][] a = {{1, 2, 3}, {4, 5, 6}};
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.deepToString(a));
         System.out.println(Arrays.deepHashCode(a));

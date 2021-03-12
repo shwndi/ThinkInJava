@@ -39,10 +39,10 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
     }
 
     @Override
-    public Set<Map.Entry<K,V>> entrySet() {
-        Set<Map.Entry<K,V>> set = new HashSet<>();
+    public Set<Map.Entry<K, V>> entrySet() {
+        Set<Map.Entry<K, V>> set = new HashSet<>();
         for (LinkedList<MapEntry<K, V>> bucket : buckets) {
-            if (bucket==null){
+            if (bucket == null) {
                 continue;
             }
             for (MapEntry<K, V> kvMapEntry : bucket) {

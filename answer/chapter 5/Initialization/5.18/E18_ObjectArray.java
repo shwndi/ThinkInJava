@@ -6,11 +6,11 @@
 package initialization;
 
 public class E18_ObjectArray {
-  public static void main(String args[]) {
-    Test[] array = new Test[5];
-    for(int i = 0; i < array.length; i++)
-      array[i] = new Test(Integer.toString(i));
-  }
+    public static void main(String args[]) {
+        Test[] array = new Test[5];
+        for (int i = 0; i < array.length; i++)
+            array[i] = new Test(Integer.toString(i));
+    }
 } /* Output:
 String constructor; s = 0
 String constructor; s = 1

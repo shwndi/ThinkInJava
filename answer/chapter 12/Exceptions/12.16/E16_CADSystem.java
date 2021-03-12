@@ -7,14 +7,14 @@
 package exceptions;
 
 public class E16_CADSystem {
-  public static void main(String[] args) {
-    reusing.CADSystem x = new reusing.CADSystem(47);
-    try {
-      return;
-    } finally {
-      x.dispose();
+    public static void main(String[] args) {
+        reusing.CADSystem x = new reusing.CADSystem(47);
+        try {
+            return;
+        } finally {
+            x.dispose();
+        }
     }
-  }
 } /* Output:
 Shape constructor
 Shape constructor

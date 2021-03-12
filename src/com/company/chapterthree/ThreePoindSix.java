@@ -9,12 +9,12 @@ package com.company.chapterthree;
  * @date 2020-7-7
  */
 public class ThreePoindSix {
-	public static void main(String[] args) {
-		int a = 1;
-		int b = 1;
-		System.out.println("前缀"+ ++a);
-		System.out.println("最终"+a);
-		System.out.println("后缀"+ b++);
-		System.out.println("最终"+b);
-	}
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 1;
+        System.out.println("前缀" + ++a);
+        System.out.println("最终" + a);
+        System.out.println("后缀" + b++);
+        System.out.println("最终" + b);
+    }
 }

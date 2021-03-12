@@ -5,7 +5,7 @@ package com.company.chaptertwelve;
  * @date 2020-10-14
  */
 public class Human {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		/*try{
 			throw new Sneeze();
 		}catch(Sneeze e){
@@ -18,5 +18,5 @@ public class Human {
 		}catch (Annoynace a){
 			System.out.println("Caught Annoyance");
 		}*/
-	}
+    }
 }
