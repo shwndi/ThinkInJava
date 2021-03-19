@@ -1,6 +1,4 @@
-package dateType;
-
-import com.company.chaptertwo.A;
+package dataType;
 
 import java.util.Arrays;
 

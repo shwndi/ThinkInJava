@@ -1,4 +1,4 @@
-package dateType;
+package dataType;
 
 import java.util.ArrayList;
 import java.util.Arrays;

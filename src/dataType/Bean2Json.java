@@ -1,4 +1,4 @@
-package dateType;
+package dataType;
 
 import cn.hutool.json.JSONUtil;
 

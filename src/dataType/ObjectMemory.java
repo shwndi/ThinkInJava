@@ -1,4 +1,4 @@
-package dateType;
+package dataType;
 
 import com.company.chapterfourteen.individual.Cat;
 import org.openjdk.jol.info.ClassLayout;
