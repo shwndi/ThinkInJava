@@ -118,7 +118,7 @@ public class RoShamBo1 {
 
     public static void match(Item a,Item b){
         System.out.println();
-        a+" vs "+b +" : " +a.compete(b);
+   //     a+" vs "+b +" : " +a.compete(b);
     }
     public static void main(String[] args) {
         for (int i = 0; i < SIZE; i++) {
