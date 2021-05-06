@@ -1,4 +1,4 @@
-package dataType;
+package dataType.collection;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

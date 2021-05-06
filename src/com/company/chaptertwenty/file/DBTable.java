@@ -1,4 +1,4 @@
-package com.company.chaptertwenty.usercase;
+package com.company.chaptertwenty.file;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,12 +6,13 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * 数据库表
+ *
  * @author czy
- * @date 2021/3/19
+ * @date 2021/3/22
  */
-@Target(ElementType.METHOD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@interface UserCase {
-public int id();
-public String description()default "no description";
+public @interface DBTable {
+    public String name() default "";
 }
