@@ -15,8 +15,8 @@ public class TestThread extends Thread {
     }
     public static void main(String[] args) {
         TestThread thread = new TestThread();
-//        thread.run();
-        thread.start();
+        thread.run();
+//        thread.start();
         for (int i = 0; i < 2000; i++) {
             System.out.println("我在看代码 "+i);
         }
