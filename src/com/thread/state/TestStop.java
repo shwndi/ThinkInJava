@@ -1,6 +1,5 @@
 package com.thread.state;
 
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 测试stop
