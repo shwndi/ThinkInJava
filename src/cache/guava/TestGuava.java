@@ -1,6 +1,5 @@
 package cache.guava;
 
-import org.apache.commons.lang.StringUtils;
 
 /**
  * 本地缓存
